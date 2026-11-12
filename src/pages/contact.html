@@ -1,0 +1,58 @@
+<!-- {"title": "Contact · Garden of Growing Counseling", "description": "Questions about the practice, scheduling, or fit. Write to Garden of Growing Counseling."} -->
+    <section class="page-hero">
+      <div class="page-hero-media" aria-hidden="true">
+        <div class="parallax-layer" data-parallax="0.14"><img src="images/garden/leaves-hanging.jpg" alt="" fetchpriority="high" style="object-position: 80% 30%"></div>
+      </div>
+      <div class="page-hero-inner">
+        <p class="eyebrow intro" style="--i:0">Contact</p>
+        <h1 class="intro" style="--i:1">A question is a fine <em>place to start.</em></h1>
+        <p class="lede intro" style="--i:2">Write with whatever you want to know about the practice, scheduling, or fit. If you already know you would like a session, the booking page is a little more direct.</p>
+      </div>
+    </section>
+
+    <section class="section form-section">
+      <div class="wrap form-layout">
+        <div class="form-card" data-reveal>
+          <div class="form-card-head">
+            <h2>Send a <em>note</em></h2>
+            <p>Replies go out within two business days.</p>
+          </div>
+          <form class="form" data-mail-form data-subject="A question for Garden of Growing Counseling" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" data-label="Name" type="text" autocomplete="name" required maxlength="80" aria-describedby="name-err">
+                <span class="err" id="name-err">Please add your name.</span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" data-label="Email" type="email" autocomplete="email" required maxlength="120" aria-describedby="email-err">
+                <span class="err" id="email-err">Please add an email address we can reply to.</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">What would you like to ask?</label>
+              <textarea id="message" name="message" data-label="Message" required maxlength="2000" aria-describedby="message-err" placeholder="A few sentences is plenty."></textarea>
+              <span class="err" id="message-err">Please write a short note so we know how to reply.</span>
+            </div>
+            <button class="btn" type="submit"><span class="btn-text">Send a note</span>{{arrow}}</button>
+          </form>
+          <div class="form-success" data-success hidden>
+            {{lotus}}
+            <h2>Your note is <em>ready.</em></h2>
+            <p>Your email app should open with the message prepared. Send it from there, and the practice will reply. If nothing opened, write directly to <a href="mailto:{{email}}">{{email}}</a>.</p>
+          </div>
+        </div>
+        <aside class="aside" data-reveal>
+          <div class="aside-photo arch reveal-img"><img src="images/garden/hydrangea-bloom-wide.jpg" alt="White hydrangea blooms" loading="lazy"></div>
+          <h2>Before you <em>write</em></h2>
+          <ul>
+            <li>Replies go out within two business days.</li>
+            <li>Sessions are offered in person and by video. The meeting place is shared when you book.</li>
+            <li>Fees are discussed before the first session, so there is nothing hidden.</li>
+            <li>This form is not watched for emergencies. If you are in crisis, call or text 988, or call 911.</li>
+          </ul>
+          <p class="contact-direct">Prefer email?<br><a href="mailto:{{email}}">{{email}}</a></p>
+        </aside>
+      </div>
+    </section>
